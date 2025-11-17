@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+<include file="hr/tables/departments.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/employees.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/jobs.sql" relativeToChangelogFile="true"/>
+<include file="hr/tables/salary_history.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/idx_emp_dept.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/idx_emp_job.sql" relativeToChangelogFile="true"/>
+<include file="hr/indexes/idx_emp_manager.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/fk_department.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/fk_job.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/fk_manager.sql" relativeToChangelogFile="true"/>
+<include file="hr/ref_constraints/fk_salary_emp.sql" relativeToChangelogFile="true"/>
+<include file="_custom/populate_tables_with_demo_data.sql" relativeToChangelogFile="true"/> <!-- action="custom" -->
+</databaseChangeLog>
